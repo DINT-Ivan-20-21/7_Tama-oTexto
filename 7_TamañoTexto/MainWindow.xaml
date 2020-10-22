@@ -1,0 +1,96 @@
+﻿<Window
+    x:Class="_7_TamañoTexto.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:local="clr-namespace:_7_TamañoTexto"
+    mc:Ignorable="d"
+    Height="370"
+    Width="970"
+    Icon="map_character.ico"
+    Title="Tamaño de Texto">
+    <Grid>
+        <TextBlock
+            x:Name="cambiarTextBlock"
+            HorizontalAlignment="Left"
+            Height="100"
+            Margin="60,52,0,0"
+            TextWrapping="Wrap"
+            Text="Desarrollo de interfaces"
+            VerticalAlignment="Top"
+            Width="850"
+            FontSize="72"
+            FontWeight="Bold"
+            Foreground="#FF5A8CF0"
+            TextAlignment="Center">
+            <TextBlock.Effect>
+                <DropShadowEffect />
+            </TextBlock.Effect>
+        </TextBlock>
+        <RadioButton
+            x:Name="pequeñoRadioButton"
+            Content="Pequeño"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Margin="150,220,0,0"
+            Tag="36"
+            GroupName="fuente"
+            Checked="tamañoFuente_Checked"
+            RenderTransformOrigin="0.5,0.5">
+            <RadioButton.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform
+                        ScaleX="3"
+                        ScaleY="3" />
+                    <SkewTransform />
+                    <RotateTransform />
+                    <TranslateTransform />
+                </TransformGroup>
+            </RadioButton.RenderTransform>
+        </RadioButton>
+        <RadioButton
+            x:Name="medianoRadioButton"
+            Content="Mediano"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Margin="450,220,0,0"
+            Tag="48"
+            GroupName="fuente"
+            IsChecked="True"
+            Checked="tamañoFuente_Checked"
+            RenderTransformOrigin="0.5,0.5">
+            <RadioButton.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform
+                        ScaleX="3"
+                        ScaleY="3" />
+                    <SkewTransform />
+                    <RotateTransform />
+                    <TranslateTransform />
+                </TransformGroup>
+            </RadioButton.RenderTransform>
+        </RadioButton>
+        <RadioButton
+            x:Name="grandeRadioButton"
+            Content="Grande"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Margin="750,220,0,0"
+            Tag="72"
+            GroupName="fuente"
+            Checked="tamañoFuente_Checked"
+            RenderTransformOrigin="0.5,0.5">
+            <RadioButton.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform
+                        ScaleX="3"
+                        ScaleY="3" />
+                    <SkewTransform />
+                    <RotateTransform />
+                    <TranslateTransform />
+                </TransformGroup>
+            </RadioButton.RenderTransform>
+        </RadioButton>
+    </Grid>
+</Window>
